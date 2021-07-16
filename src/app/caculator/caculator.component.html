@@ -1,0 +1,11 @@
+<p>caculator works!</p>
+<input type="number" [(ngModel)]="calculator.a">
+<input type="number" [(ngModel)]="calculator.b">
+<select [(ngModel)]="calculator.operator">
+  <option value="+">Cong</option>
+  <option value="-">Tru</option>
+  <option value="*">Nhan</option>
+  <option value="/">Chia</option>
+</select>
+<button type="button" (click)="getResult()">Tinh</button>
+<p> {{calculator.result}}</p>
